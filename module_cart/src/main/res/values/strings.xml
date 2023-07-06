@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">module_cart</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="cart_fragment">cart fragment</string>
+</resources>

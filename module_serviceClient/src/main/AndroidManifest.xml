@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 声明软件包可见性需求-->
+    <queries>
+        <package android:name="com.example.service" />
+    </queries>
+    <application>
+        <activity
+            android:name=".ServiceClientActivity"
+            android:exported="true" />
+
+    </application>
+</manifest>

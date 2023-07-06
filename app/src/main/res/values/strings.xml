@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AndroidPracticeProject</string>
+    
+    <string-array name="business">
+        <item>Activity LifeCycle</item>
+        <item>Activity LaunchMode</item>
+        <item>IntentFilter</item>
+        <item>服务</item>
+        <item>组件化</item>
+    </string-array>
+</resources>
