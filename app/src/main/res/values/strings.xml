@@ -7,5 +7,6 @@
         <item>IntentFilter</item>
         <item>服务</item>
         <item>组件化</item>
+        <item>Handler</item>
     </string-array>
 </resources>

@@ -1,6 +1,5 @@
 package com.example.androidpracticeproject;
 
-import static com.example.common.constant.ARouterConstants.SERVICECLIENT_ACTIVITY;
 
 import android.os.Bundle;
 
@@ -46,6 +45,12 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
                 //通过路由跳转到首页组件的页面（但没有依赖首页组件）
                 ARouter.getInstance()
                         .build(ARouterConstants.HOME_ACTIVITY)
+                        .navigation();
+                break;
+            case 5:
+                //Handler
+                ARouter.getInstance()
+                        .build(ARouterConstants.APP_HANDLERACTIVITY)
                         .navigation();
                 break;
         }

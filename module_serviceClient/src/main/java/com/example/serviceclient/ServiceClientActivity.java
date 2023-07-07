@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.IBinder;
 import android.os.RemoteException;
 import android.util.Log;
@@ -47,6 +48,7 @@ public class ServiceClientActivity extends AppCompatActivity {
         viewDataBinding.tvSetObj.setOnClickListener(view->{
             setObj2Service();
         });
+        final Handler handler = new Handler();
     }
 
     void doBindService() {

@@ -7,6 +7,7 @@ package com.example.common.constant
  */
 object ARouterConstants {
     const val HOME_ACTIVITY = "/home/homeActivity"
+    const val APP_HANDLERACTIVITY = "/app/HandlerActivity"
     const val SERVICE_ACTIVITY = "/service/ServiceActivity"
     const val SERVICECLIENT_ACTIVITY = "/serviceclient/ServiceClientActivity"
 }
