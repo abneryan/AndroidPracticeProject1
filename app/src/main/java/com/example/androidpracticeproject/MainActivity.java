@@ -1,6 +1,7 @@
 package com.example.androidpracticeproject;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,9 +10,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.example.androidpracticeproject.adapter.MainBussinessAdapter;
+import com.example.androidpracticeproject.annotation.AnnotationActivity;
 import com.example.androidpracticeproject.callback.ItemClickListener;
 import com.example.androidpracticeproject.databinding.ActivityMainBinding;
 import com.example.common.constant.ARouterConstants;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements ItemClickListener {
     private ActivityMainBinding mainBinding;
@@ -52,6 +56,11 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
                 ARouter.getInstance()
                         .build(ARouterConstants.APP_HANDLERACTIVITY)
                         .navigation();
+                break;
+            case 6:
+              //annotation/APT
+                final Intent intent = new Intent(this, AnnotationActivity.class);
+                startActivity(intent);
                 break;
         }
     }

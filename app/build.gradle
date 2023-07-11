@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.example.androidpracticeproject'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.androidpracticeproject"
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -50,4 +50,7 @@ dependencies {
     implementation project(path: ':module_common')
     implementation project(path: ':module_cart')
     implementation project(path: ':module_home')
+    implementation project(path: ':annotation')
+    annotationProcessor project(path: ':compliler')
+
 }

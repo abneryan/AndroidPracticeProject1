@@ -11,7 +11,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/annotation" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/compliler" />
             <option value="$PROJECT_DIR$/export_cart" />
             <option value="$PROJECT_DIR$/module_cart" />
             <option value="$PROJECT_DIR$/module_common" />
