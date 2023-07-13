@@ -143,6 +143,10 @@ public class HandlerActivity extends AppCompatActivity implements View.OnClickLi
                 message.obj ="test";
                 handler1.sendMessage(message);
                 Looper.loop();
+               /* 注意：如果在handleMessage 中处理完时间之后没有调用Looper.myLooper().quit(); 或者
+                Looper.myLooper().quitSafely()方法，子线程会处于阻塞状态，则Log.d(TAG, "Thread---handle---end");
+                log不会执行。*/
+                Log.d(TAG, "Thread---handle---end");
             }
         }.start();
 
