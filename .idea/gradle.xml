@@ -20,6 +20,8 @@
             <option value="$PROJECT_DIR$/module_home" />
             <option value="$PROJECT_DIR$/module_service" />
             <option value="$PROJECT_DIR$/module_serviceClient" />
+            <option value="$PROJECT_DIR$/reflect" />
+            <option value="$PROJECT_DIR$/rxjava" />
           </set>
         </option>
       </GradleProjectSettings>

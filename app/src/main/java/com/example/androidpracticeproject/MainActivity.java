@@ -3,6 +3,7 @@ package com.example.androidpracticeproject;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -14,8 +15,6 @@ import com.example.androidpracticeproject.annotation.AnnotationActivity;
 import com.example.androidpracticeproject.callback.ItemClickListener;
 import com.example.androidpracticeproject.databinding.ActivityMainBinding;
 import com.example.common.constant.ARouterConstants;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements ItemClickListener {
     private ActivityMainBinding mainBinding;
@@ -34,6 +33,19 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
         mainBinding.recyclerview.setLayoutManager(linearLayoutManager);
         mainBussinessAdapter = new MainBussinessAdapter(this, mBusinessList, this);
         mainBinding.recyclerview.setAdapter(mainBussinessAdapter);
+        mainBinding.recyclerview.post(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        });
+        new Thread(){
+            @Override
+            public void run() {
+                super.run();
+                mainBinding.commonTitel.tvTitel.setText("dddddd");
+            }
+        }.start();
     }
 
     @Override
@@ -61,6 +73,16 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
               //annotation/APT
                 final Intent intent = new Intent(this, AnnotationActivity.class);
                 startActivity(intent);
+                break;
+            case 7://reflect
+                ARouter.getInstance()
+                        .build(ARouterConstants.REFLECT_ACTIVITY)
+                        .navigation();
+                break;
+            case 8://rxjava
+                ARouter.getInstance()
+                        .build(ARouterConstants.RXJAVA_USE_ACTIVITY)
+                        .navigation();
                 break;
         }
     }

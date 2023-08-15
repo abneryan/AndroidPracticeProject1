@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.AndroidPracticeProject" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="col orPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowSplashScreenBackground">@color/material_dynamic_neutral60</item>
+    </style>
+</resources>

@@ -1,0 +1,29 @@
+//扩展块
+ext {
+    isModule = false
+    androidID = [
+            compileSdk               : 34,
+            minSdk                   : 24,
+            targetSdk                : 34,
+            testInstrumentationRunner: "androidx.test.runner.AndroidJUnitRunner",
+            versionCode              : 1,
+            versionName              : "1.0"
+    ]
+    appID = [
+            applicationId: "com.example.androidpracticeproject",
+            home_applicationId: "com.example.androidpracticeproject.home",
+            cart_applicationId: "com.example.androidpracticeproject.cart"
+    ]
+
+    dependenciesID = [
+            "appcompat"       : 'androidx.appcompat:appcompat:1.4.1',
+            "material"        : 'com.google.android.material:material:1.5.0',
+            "constraintlayout": 'androidx.constraintlayout:constraintlayout:2.1.3',
+            "ktx"             : 'androidx.core:core-ktx:+'
+    ]
+
+    url = [
+            "debug" : "http://debug.xxx",
+            "release" : "http://release.xxx"
+    ]
+}

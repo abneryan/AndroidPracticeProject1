@@ -9,5 +9,7 @@
         <item>组件化</item>
         <item>Handler</item>
         <item>APT</item>
+        <item>Reflect</item>
+        <item>Rxjava</item>
     </string-array>
 </resources>

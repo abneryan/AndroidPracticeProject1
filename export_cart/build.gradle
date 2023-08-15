@@ -1,16 +1,17 @@
 plugins {
     id 'com.android.library'
 }
+def androidID = rootProject.ext.androidID
 
 android {
     namespace 'com.example.export_cart'
-    compileSdk 33
+    compileSdk androidID.compileSdk
 
     defaultConfig {
-        minSdk 24
-        targetSdk 33
+        minSdk androidID.minSdk
+        targetSdk androidID.targetSdk
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner androidID.testInstrumentationRunner
         consumerProguardFiles "consumer-rules.pro"
     }
 
