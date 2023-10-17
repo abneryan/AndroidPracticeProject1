@@ -11,5 +11,6 @@
         <item>APT</item>
         <item>Reflect</item>
         <item>Rxjava</item>
+        <item>事件分发</item>
     </string-array>
 </resources>

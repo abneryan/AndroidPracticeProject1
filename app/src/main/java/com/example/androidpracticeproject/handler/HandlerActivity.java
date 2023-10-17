@@ -128,7 +128,7 @@ public class HandlerActivity extends AppCompatActivity implements View.OnClickLi
                 super.run();
                 Log.d(TAG, "Thread---run--start---threadname:" + Thread.currentThread().getName());
                 Looper.prepare();
-                Handler handler1 = new Handler(){
+                Handler handler1 = new Handler(Looper.myLooper()){
                     @Override
                     public void handleMessage(@NonNull Message msg) {
                         super.handleMessage(msg);

@@ -24,7 +24,7 @@ public class ReflectActivity extends AppCompatActivity {
         InjectUtil.injectEvent(this);
     }
 
-    //@OnClick({R.id.tv_1, R.id.tv_2})
+//    @OnClick({R.id.tv_1, R.id.tv_2})
     public void onClick(View view){
         if (view.getId() == R.id.tv_1) {
             Log.d("YGQ", "tv_1 onClick");
@@ -32,10 +32,10 @@ public class ReflectActivity extends AppCompatActivity {
             Log.d("YGQ", "tv_1 onClick");
         }
     }
-   // @OnLongClick({R.id.tv_1,R.id.tv_2})
+    //@OnLongClick({R.id.tv_1,R.id.tv_2})
     public void onLongClick(View view){
         if (view.getId() == R.id.tv_1) {
-            Log.d("YGQ", "tv_1 onLongClick");
+            Log.d("YGQ", "tv_1 onLongClic      k");
         } else if(view.getId() == R.id.tv_2){
             Log.d("YGQ", "tv_1 onLongClick");
         }

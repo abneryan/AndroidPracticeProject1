@@ -4,6 +4,7 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="col orPrimary">@color/my_light_primary</item> -->
         <item name="android:windowSplashScreenBackground">@color/material_dynamic_neutral60</item>
+        <item name="android:windowSplashscreenContent">@drawable/ic_launcher_background</item>
     </style>
 
     <style name="Theme.AndroidPracticeProject" parent="Base.Theme.AndroidPracticeProject" />
