@@ -26,18 +26,19 @@ public class MotionEventActivity extends AppCompatActivity {
                 Log.d(TAG,"onClick");
             }
         });
-        myView.setOnLongClickListener(view1 ->{
+       myView.setOnLongClickListener(view1 ->{
             Log.d(TAG,"onLongClick");
 
             return false;
         });
+       /*
         view.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 Log.d(TAG,"onTouch---event:" + event.getAction());
                 return false;
             }
-        });
+        });*/
 
 //        view.setOnClickListener(new View.OnClickListener() {
 //            @Overridex'x

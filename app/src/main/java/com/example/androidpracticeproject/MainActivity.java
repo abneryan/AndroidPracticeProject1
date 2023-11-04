@@ -3,6 +3,7 @@ package com.example.androidpracticeproject;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.MessageQueue;
 import android.os.Trace;
 import android.util.Log;
@@ -43,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
         mainBinding.recyclerview.setLayoutManager(linearLayoutManager);
         mainBussinessAdapter = new MainBussinessAdapter(this, mBusinessList, this);
         mainBinding.recyclerview.setAdapter(mainBussinessAdapter);
+        mainBinding.commonTitel.ivBack.post(()-> Log.d("YGQ1",mainBinding.commonTitel.ivBack.getHeight()+""));
+        final Handler handler = new Handler();
+        handler.post(()-> Log.d("YGQ2",mainBinding.commonTitel.ivBack.getHeight()+""));
         mainBinding.recyclerview.post(new Runnable() {
             @Override
             public void run() {
@@ -57,11 +61,11 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
             }
         }.start();
 
-        try {
+       /* try {
             Thread.sleep(6_000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-        }
+        }*/
 
         getMainLooper().getQueue().addIdleHandler(new MessageQueue.IdleHandler() {
             @Override

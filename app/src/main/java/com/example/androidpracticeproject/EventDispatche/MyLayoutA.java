@@ -4,11 +4,12 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 
-public class MyLayoutA extends LinearLayout {
+public class MyLayoutA extends FrameLayout {
     private String TAG ="MyLayoutA";
 
     public MyLayoutA(Context context, @Nullable AttributeSet attrs) {
